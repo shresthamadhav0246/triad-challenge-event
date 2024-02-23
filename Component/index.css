@@ -1,0 +1,136 @@
+.container-pie {
+  width: 500px;
+  height: 400px;
+}
+
+.container-bar {
+  width: 600px;
+  height: 400px;
+}
+
+/* Add this to your CSS file or style tag */
+.modal-content {
+  width: 90%;
+  margin: auto;
+}
+
+.modal-90w {
+  max-width: 90%;
+}
+
+/* YourComponent.css */
+.vertical-separator {
+  border-left: 1px solid #ccc; /* Adjust the color and style as needed */
+  height: 100%;
+  margin: 0; /* Remove any default margin */
+}
+
+/* src/App.css */
+/* src/App.css */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding-top: 56px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #343a40; /* Dark black background color */
+  color: #fff; /* Text color */
+  width: 250px;
+  transition: width 0.3s;
+}
+
+.sidebar.open {
+  width: 56px;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 56px;
+  padding-top: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 56px);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #adb5bd; /* Inactive text color */
+  transition: background-color 0.3s;
+}
+
+.nav-link.active {
+  background-color: #495057; /* Active item background color */
+  color: #fff; /* Active text color */
+}
+
+/* App.css */
+.white-dropdown {
+  color: white !important; /* Use !important to override default styles if necessary */
+}
+
+.custom-list {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list > li {
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review-item h5 {
+  margin-right: 10px;
+}
+
+.review-item p {
+  margin: 0;
+}
+
+.review-item button {
+  margin-left: 10px;
+}
+
+.magnifying-glass {
+  position: fixed;
+  width: 100px; 
+  height: 100px; 
+  pointer-events: none;
+  z-index: 9999; 
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.zoom-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 50%;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.3); 
+  transition: all 0.2s ease-in-out; 
+}
+
+.magnifying-glass:hover .zoom-circle {
+  transform: scalez(2); 
+}
